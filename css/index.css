@@ -1,0 +1,43 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#aplayer {
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .bg {
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 100vh !important;
+    max-height: 100vw !important;
+  }
+
+  #aplayer {
+    transform: rotate(90deg);
+    right: unset;
+    left: 0;
+  }
+}
