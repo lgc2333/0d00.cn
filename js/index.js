@@ -17,18 +17,22 @@ window.addEventListener('onload', () => {
       },
     ],
   });
-});
 
-document.getElementById('tip').addEventListener('click', () => {
+  /** @type {HTMLAnchorElement} */
+  const tip = document.getElementById('tip');
   /** @type {HTMLImageElement} */
   const bg = document.getElementById('bg');
-  bg.style.opacity = 1;
-  bg.addEventListener('click', () => {
-    window.location.href = 'https://www.bilibili.com/video/BV1Lz4y1v7xa';
-  });
 
-  setTimeout(() => {
-    window.player.play();
-    document.title = '私のオナニーを見てください！';
-  }, 1000);
+  tip.addEventListener('click', () => {
+    tip.style.display = 'none';
+    bg.style.opacity = 1;
+    bg.addEventListener('click', () => {
+      window.location.href = 'https://www.bilibili.com/video/BV1Lz4y1v7xa';
+    });
+
+    setTimeout(() => {
+      window.player.play();
+      document.title = '私のオナニーを見てください！';
+    }, 1000);
+  });
 });
