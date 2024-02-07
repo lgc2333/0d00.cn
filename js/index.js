@@ -9,11 +9,13 @@ window.onload = () => {
       {
         name: 'Voice',
         artist: '綾地寧々',
+        cover: 'assets/see-mine-0721.png',
         url: 'assets/see-mine-0721.ogg',
       },
       {
         name: '恋せよ乙女！',
         artist: '米倉千尋',
+        cover: 'assets/see-mine-0721.png',
         url: 'http://music.163.com/song/media/outer/url?id=34324540.mp3',
       },
     ],
@@ -27,7 +29,8 @@ window.onload = () => {
   });
 
   setTimeout(() => {
-    window.player.play();
+    // window.player.play();
     document.title = '私のオナニーを見てください！';
+    window.player.notice('语音和BGM在这里~');
   }, 1000);
 };
