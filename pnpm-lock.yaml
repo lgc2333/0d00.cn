@@ -1,4 +1,4 @@
-lockfileVersion: "6.0"
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -52,6 +52,6 @@ packages:
       {
         integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==,
       }
-    engines: { node: ">=14.17" }
+    engines: { node: '>=14.17' }
     hasBin: true
     dev: true

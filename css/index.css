@@ -19,6 +19,7 @@ body {
 }
 
 #bg {
+  display: none;
   opacity: 0;
 }
 
