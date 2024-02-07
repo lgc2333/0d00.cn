@@ -16,9 +16,6 @@ body {
   object-fit: contain;
 
   transition: opacity 1s;
-}
-
-#bg {
   opacity: 0;
 }
 

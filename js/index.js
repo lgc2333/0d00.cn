@@ -1,4 +1,4 @@
-window.addEventListener('onload', () => {
+window.addEventListener('load', () => {
   window.player = new APlayer({
     container: document.getElementById('aplayer'),
     // fixed: true,
@@ -23,14 +23,16 @@ window.addEventListener('onload', () => {
   /** @type {HTMLImageElement} */
   const bg = document.getElementById('bg');
 
+  tip.style.opacity = 1;
   tip.addEventListener('click', () => {
-    tip.style.display = 'none';
+    tip.style.opacity = 0;
     bg.style.opacity = 1;
     bg.addEventListener('click', () => {
       window.location.href = 'https://www.bilibili.com/video/BV1Lz4y1v7xa';
     });
 
     setTimeout(() => {
+      tip.style.display = 'none';
       window.player.play();
       document.title = '私のオナニーを見てください！';
     }, 1000);
