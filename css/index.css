@@ -3,7 +3,8 @@ body {
   margin: 0;
 }
 
-.bg {
+#bg,
+#tip {
   position: absolute;
   top: 50%;
   left: 50%;
