@@ -3,19 +3,16 @@ window.onload = () => {
     container: document.getElementById('aplayer'),
     // fixed: true,
     mini: true,
-    // autoplay: true,
     loop: 'none',
     audio: [
       {
         name: 'Voice',
         artist: '綾地寧々',
-        cover: 'assets/see-mine-0721.png',
         url: 'assets/see-mine-0721.ogg',
       },
       {
         name: '恋せよ乙女！',
         artist: '米倉千尋',
-        cover: 'assets/see-mine-0721.png',
         url: 'http://music.163.com/song/media/outer/url?id=34324540.mp3',
       },
     ],
@@ -28,9 +25,9 @@ window.onload = () => {
     window.location.href = 'https://www.bilibili.com/video/BV1Lz4y1v7xa';
   });
 
+  alert('本网站有声，请注意音量~');
   setTimeout(() => {
-    // window.player.play();
+    window.player.play();
     document.title = '私のオナニーを見てください！';
-    window.player.notice('语音和BGM在这里~');
   }, 1000);
 };
