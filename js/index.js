@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener("onload", () => {
   window.player = new APlayer({
     container: document.getElementById("aplayer"),
     // fixed: true,
@@ -17,7 +17,9 @@ window.onload = () => {
       },
     ],
   });
+});
 
+document.getElementById("tip").addEventListener("click", () => {
   /** @type {HTMLImageElement} */
   const bg = document.getElementById("bg");
   bg.style.opacity = 1;
@@ -29,4 +31,4 @@ window.onload = () => {
     window.player.play();
     document.title = "私のオナニーを見てください！";
   }, 1000);
-};
+});
