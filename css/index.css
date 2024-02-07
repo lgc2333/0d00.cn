@@ -19,13 +19,13 @@ body {
 }
 
 #bg {
-  display: none;
   opacity: 0;
 }
 
 #tip {
   z-index: -1;
   color: #aaa;
+  text-align: center;
 }
 
 #aplayer {

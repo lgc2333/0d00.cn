@@ -22,7 +22,6 @@ window.addEventListener('onload', () => {
 document.getElementById('tip').addEventListener('click', () => {
   /** @type {HTMLImageElement} */
   const bg = document.getElementById('bg');
-  bg.style.display = 'block';
   bg.style.opacity = 1;
   bg.addEventListener('click', () => {
     window.location.href = 'https://www.bilibili.com/video/BV1Lz4y1v7xa';
