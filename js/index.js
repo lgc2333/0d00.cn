@@ -1,12 +1,24 @@
-(() => {
-  const vIds = ['BV1Lz4y1v7xa', 'BV1Ke411e7xA', 'BV1iN4y1v7nB', 'BV1pC411r7mU', 'BV1Hg4y1r7LT', 'BV1rZ421B7mn', 'BV1eH4y1u7iN', 'BV1HM4m117fJ', 'BV1GkseezEVb', 'BV16NgazvE98', 'BV1kDuDzXEUX', 'BV1wLunzKEoW'];
+;(() => {
+  const vIds = [
+    'BV1Lz4y1v7xa',
+    'BV1Ke411e7xA',
+    'BV1iN4y1v7nB',
+    'BV1pC411r7mU',
+    'BV1Hg4y1r7LT',
+    'BV1rZ421B7mn',
+    'BV1eH4y1u7iN',
+    'BV1HM4m117fJ',
+    'BV16NgazvE98',
+    'BV1kDuDzXEUX',
+    'BV1wLunzKEoW',
+  ]
 
   /**
    * @param {number} max
    * @returns {number}
    */
   function randMax(max) {
-    return Math.floor(Math.random() * (max + 1));
+    return Math.floor(Math.random() * (max + 1))
   }
 
   /**
@@ -14,8 +26,8 @@
    * @returns {string}
    */
   function choose(list) {
-    const index = randMax(list.length - 1);
-    return list[index];
+    const index = randMax(list.length - 1)
+    return list[index]
   }
 
   window.addEventListener('load', () => {
@@ -36,26 +48,26 @@
           url: 'http://music.163.com/song/media/outer/url?id=34324540.mp3',
         },
       ],
-    });
+    })
 
     /** @type {HTMLAnchorElement} */
-    const tip = document.getElementById('tip');
+    const tip = document.getElementById('tip')
     /** @type {HTMLImageElement} */
-    const bg = document.getElementById('bg');
+    const bg = document.getElementById('bg')
 
-    tip.style.opacity = 1;
+    tip.style.opacity = 1
     tip.addEventListener('click', () => {
-      tip.style.opacity = 0;
-      bg.style.opacity = 1;
+      tip.style.opacity = 0
+      bg.style.opacity = 1
       bg.addEventListener('click', () => {
-        window.location.href = `https://www.bilibili.com/video/${choose(vIds)}`;
-      });
+        window.location.href = `https://www.bilibili.com/video/${choose(vIds)}`
+      })
 
       setTimeout(() => {
-        tip.style.display = 'none';
-        window.player.play();
-        document.title = '私のオナニーを見てください！';
-      }, 1000);
-    });
-  });
-})();
+        tip.style.display = 'none'
+        window.player.play()
+        document.title = '私のオナニーを見てください！'
+      }, 1000)
+    })
+  })
+})()
