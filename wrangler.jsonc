@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "0d00-cn",
+  "compatibility_date": "2026-07-22",
+  "assets": {
+    "directory": "./static",
+  },
+}

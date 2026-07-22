@@ -1,18 +1,17 @@
 {
   "name": "0d00-cn",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "private": true,
+  "author": "LgCuwukii <lgc2333@126.com>",
+  "packageManager": "pnpm@11.15.1+sha512.81350b07e53c9538a02f1f2303b4290fa2d7be04e56e2a970c4cc4b417dc761de196edabd49d55c7dc9580db81007c44143e4e3d7e462b3000d23c255122d065",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "student_2333 <lgc2333@126.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.1.6"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "aplayer": "^1.10.1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "wrangler": "^4.112.0"
   }
 }
